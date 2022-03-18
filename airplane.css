@@ -1,0 +1,64 @@
+body{
+    background:lightblue;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.airplane{
+    margin-top:150px;
+    margin-left:600px;
+    margin-right:0;
+    width:300px;
+    height:300px;
+    position:fixed;
+    animation:airplane 2s alternate infinite;
+    
+}
+.cloud1 ,.cloud2 ,.cloud3{
+      height:100px;
+     position:absolute;
+     right:0%;
+    
+     position:fixed;
+}
+.cloud1{
+    top:25%;
+    transform:translateX(150px);
+    animation:cloud1 5s ease infinite ;
+}
+.cloud2{
+    top:50%;
+    transform:translateX(150px); 
+    animation:cloud1 3s linear infinite ;
+    z-index:-1;
+}
+.cloud3{
+    top:75%;
+    transform:translateX(150px);
+    animation:cloud1 7s ease infinite ;
+    
+}
+@keyframes cloud1{
+    from{
+        right:0%;
+    }
+    to{
+        right:130%;
+    }
+}
+@keyframes cloud2{
+    from{}
+    to{}
+}
+@keyframes cloud3{
+    from{}
+    to{}
+}
+@keyframes airplane{
+    from{
+        tranform:translatey(0%);
+    }
+    to{
+        transform:translatey(50%);
+    }
+}
